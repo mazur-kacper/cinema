@@ -2,16 +2,42 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;            
+}
+
+#logo {
+  width: 200px;
+  height: auto;
 }
 
 .nav {
   width: 100vw;
   height: 100px;
+
+  background-color: white
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: rgb(193, 11, 11);
+}
+
+li{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3 ease;
+}
+
+li:hover{
+  background-color: #cd2727;
 }
 
 .right-side {
@@ -31,4 +57,10 @@ body {
 
 .current {
   display: flex;
+}
+
+
+.footer {
+  height: 200px;
+  background-color: #cd2727;
 }
